@@ -6,8 +6,8 @@ const app = express();
 const port = 3000;
 
 const uri = 'mongodb+srv://nihaln:nihal132@staffdirectory.700rrjo.mongodb.net/';
-const dbName = 'test';
-const collectionName = 'faculties';
+const dbName = 'mbcetData';
+const collectionName = 'info';
 
 app.use(cors()); // Enable CORS middleware
 

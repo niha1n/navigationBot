@@ -210,8 +210,6 @@
 //             }
 //         }
 //     }
-
-    
 // };
  
 
@@ -255,6 +253,7 @@ recognition.onresult = (event) => {    const transcript = event.results[0][0].tr
         }
     }
 };
+
 
             recognition.onspeechend = () => {
                 recognition.stop();

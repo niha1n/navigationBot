@@ -31,6 +31,18 @@
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
+  function speak(text) {
+    // Create a SpeechSynthesisUtterance
+    const utterance = new SpeechSynthesisUtterance(text);
+  
+    // Select a voice
+    const voices = speechSynthesis.getVoices();
+    utterance.voice = voices[3]; // Choose a specific voice
+  
+    // Speak the text
+    speechSynthesis.speak(utterance);
+  }
+
   document.querySelector('#titleBar .sceneName').remove();
   document.querySelector('#sceneListToggle .icon').remove();
 
@@ -260,6 +272,7 @@
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
+    speak(scene.data.audio)
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);

@@ -25,6 +25,7 @@ function deptExpander(dept) {
     me: 'Mechanical Engineering',
     sh: 'Science and Humanities',
     pg: 'M.Tech',
+    ad: 'Administration'
   };
 
   return departmentMap[dept] || 'Non-Teaching Staff';
@@ -96,38 +97,56 @@ function showPopup(faculty) {
     )}</p>
     <p class="text-2xl text-gray-700">Room: ${faculty.room_no}</p>
     <div class="btn btn__primary mx-0 my-6 " onclick="window.location.href = './pano/${
-      faculty.isHall
-        ? faculty.name.toLowerCase().replace(/\s+/g, '')
-        : faculty.designation.toLowerCase().includes('hod') &&
-          !faculty.designation.toLowerCase().includes('ahod')
-        ? 'hod' + faculty.dept
-        : faculty.room_no.toLowerCase().split(' ')[0] + 'block'
+      faculty.isHall == "TRUE"
+        ? faculty.room_no
+        : (faculty.designation.toLowerCase().includes('hod') &&
+           !faculty.designation.toLowerCase().includes('ahod'))
+        ? 'hod'+faculty.dept
+        : faculty.tags.includes('principal')
+        ? 'principal'
+        : faculty.tags.toLowerCase().includes('viceprincipal')
+        ? 'viceprincipal'
+        : faculty.tags.toLowerCase().includes('asstbursar')
+        ? 'asstbursar'
+        : faculty.tags.toLowerCase().includes('bursar')
+        ? 'bursar'
+        : faculty.room_no.split(' ')[0] + '-block'
     }.html';">
     <ion-icon class="paused  mr-3 " name="play"></ion-icon>
-                            <p class="text-3xl font-semibold">${
-                              faculty.isHall
-                                ? faculty.room_no
-                                : faculty.designation
-                                    .toLowerCase()
-                                    .includes('hod') &&
-                                  !faculty.designation
-                                    .toLowerCase()
-                                    .includes('ahod')
-                                ? faculty.room_no
-                                : faculty.room_no.split(' ')[0] + ' Block'
-                            }</p>
-                        </div>
-  `;
-  console.log(faculty);
-  speak(
-    `Staff room of ${faculty.name} is located in ${
-      faculty.room_no
-    }. Click on the button for the navigation to ${
-      faculty.isHall
+    <p class="text-3xl font-semibold">${
+      faculty.isHall == "TRUE"
+        ? faculty.room_no
+        : faculty.designation
+            .toLowerCase()
+            .includes('hod') &&
+          !faculty.designation
+            .toLowerCase()
+            .includes('ahod')
         ? faculty.room_no
         : faculty.room_no.split(' ')[0] + ' Block'
-    }`
-  );
+    }</p>
+                        </div>
+  `;
+
+
+  // speak(
+  //   `Staff room of ${faculty.name} is located in ${
+  //     faculty.room_no
+  //   }. Click on the button for the navigation to ${
+  //     faculty.isHall=='TRUE'
+  //       ? faculty.room_no
+  //       : faculty.room_no.split(' ')[0] + ' Block'
+  //   }`
+  // );
+  speak(  faculty.isHall == "TRUE" ? `${faculty.name} is located in ${
+    faculty.room_no.split(' ')[0]
+  } Block. Click on the button for the navigation to ${
+    faculty.name
+  } ` :`Staff room of ${faculty.name} is located in ${
+    faculty.room_no
+  }. Click on the button for the navigation to ${faculty.room_no.split(' ')[0] + ' Block'}`)
+
+
 
   // Append popup content to the container
   popupContainer.appendChild(popupContent);

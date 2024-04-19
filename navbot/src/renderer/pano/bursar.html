@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Project Title</title>
+<title>office</title>
 <meta charset="utf-8">
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+
 <script>
-  var customUrlPrefix = "tiles/bursar";
+ var customUrlPrefix = "tiles/bursar";
 </script>
 </head>
-<body class="multiple-scenes view-control-buttons ">
+<body class="multiple-scenes view-control-buttons">
 
 <div id="pano"></div>
 
 <div id="sceneList">
   <ul class="scenes">
     
-      <a href="javascript:void(0)" class="scene" data-id="0-panorama-reception-image">
-        <li class="text"> reception </li>
+      <a href="javascript:void(0)" class="scene" data-id="0-reception">
+        <li class="text">reception</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="1-panorama-image-bursar-room-front">
-        <li class="text">  bursar room front</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-panorama-right-side-1st-floor">
-        <li class="text"> right side 1st floor</li>
+      <a href="javascript:void(0)" class="scene" data-id="1-bursar">
+        <li class="text">bursar</li>
       </a>
     
   </ul>
@@ -75,7 +72,9 @@
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
 
+
 <script src="./data/bursarData.js"></script>
 <script src="index.js"></script>
+
 </body>
 </html>

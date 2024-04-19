@@ -1,9 +1,9 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-  speechSynthesis.addEventListener('voiceschanged', function() {
-    speak("Greetings! Ready to guide you to your destination on our campus.");
-  });
-}); 
+// document.addEventListener('DOMContentLoaded', function() {
+//   speechSynthesis.addEventListener('voiceschanged', function() {
+//     speak("Greetings! Ready to guide you to your destination on our campus.");
+//   });
+// }); 
 /*  clock */
 const hours = document.querySelector('.hours');
 const minutes = document.querySelector('.minutes');
@@ -90,9 +90,9 @@ function showPopup(faculty) {
   popupContent.innerHTML = `
     <h2 class="text-3xl font-bold text-gray-800">${faculty.name}</h2>
     <p class="font-semibold text-2xl text-gray-700">${
-      faculty.isHall ? '' : faculty.designation
+      faculty.isHall == "TRUE" ? '' : faculty.designation
     }</p>
-    <p class="font-semibold text-2xl text-gray-700">Department of ${deptExpander(
+    <p class="font-semibold text-2xl text-gray-700">${deptExpander(
       faculty.dept
     )}</p>
     <p class="text-2xl text-gray-700">Room: ${faculty.room_no}</p>

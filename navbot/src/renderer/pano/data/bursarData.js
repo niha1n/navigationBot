@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-panorama-reception-image",
-      "name": "panorama reception image",
+      "id": "0-reception",
+      "name": "reception",
       "levels": [
         {
           "tileSize": 256,
@@ -16,27 +16,31 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
         }
       ],
-      "faceSize": 1024,
+      "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": -1.3588390976729467,
-        "pitch": 0,
-        "fov": 1.3401592523986738
+        "yaw": -1.4463187719534716,
+        "pitch": -0.08874202131298858,
+        "fov": 1.388190413100756
       },
       "linkHotspots": [
         {
-          "yaw": -1.3979100520047698,
-          "pitch": 0.12470292417836149,
+          "yaw": -1.3954171507525608,
+          "pitch": 0.3363085539748596,
           "rotation": 0,
-          "target": "1-panorama-image-bursar-room-front"
+          "target": "1-bursar"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-panorama-image-bursar-room-front",
-      "name": "panorama image bursar room front",
+      "id": "1-bursar",
+      "name": "bursar",
       "levels": [
         {
           "tileSize": 256,
@@ -54,76 +58,35 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -2.880063961812265,
-        "pitch": 0.0847570898021921,
-        "fov": 1.3401592523986738
+        "yaw": -0.9663256274287964,
+        "pitch": 0.014697312109952065,
+        "fov": 1.4300641596566168
       },
       "linkHotspots": [
         {
-          "yaw": 1.4839466630578748,
-          "pitch": 0.3254113653456727,
-          "rotation": 10.995574287564278,
-          "target": "0-panorama-reception-image"
-        },
-        {
-          "yaw": -0.7844960185916197,
-          "pitch": 0.3473987474181257,
+          "yaw": 1.585616797225697,
+          "pitch": 0.47331994443617376,
           "rotation": 0.7853981633974483,
-          "target": "0-panorama-reception-image"
+          "target": "0-reception"
+        },
+        {
+          "yaw": -2.4549344988202506,
+          "pitch": 0.2560952268508139,
+          "rotation": 4.71238898038469,
+          "target": "0-reception"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": -2.509336790883598,
-          "pitch": 0.036175116089818715,
-          "title": "Bursar room",
-          "text": "Text"
-        }
-      ]
-    },
-    {
-      "id": "2-panorama-right-side-1st-floor",
-      "name": "panorama right side 1st floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        }
-      ],
-      "faceSize": 1024,
-      "initialViewParameters": {
-        "yaw": -1.8230353518934574,
-        "pitch": 0.1097236423769612,
-        "fov": 1.3401592523986738
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.011631971043327,
-          "pitch": 0.46695869217225194,
-          "rotation": 0,
-          "target": "1-panorama-image-bursar-room-front"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": -2.2704510699402647,
-          "pitch": 0.5888284305218754,
-          "title": "Principals room",
+          "yaw": -2.3873400218912284,
+          "pitch": 0.08779146198386023,
+          "title": "Go Back",
           "text": "Text"
         }
       ]
     }
   ],
-  "name": "Project Title",
+  "name": "office",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,

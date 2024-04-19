@@ -33,35 +33,31 @@
             "thomas achan",
             "assistant bursar",
             "assistant bursar office",
-            "assistantbursarroom"
+            "assistantbursarroom",
+            "assistant"
         ],
-        "keyword": "assistant_bursar"
+        "keyword": "assistant_bursar",
+        "link":"./pano/asstbursar.html"
     },
     "vicePrincipal": {
         "aliases": [
             "vice principal",
-            "vice principal office",
-            "vice principalroom",
-            "doctor viswanatha rao",
-            "viswanatha rao",
-            "viswanatha rao sir",
-            "rao ",
             "vice"
         ],
-        "keyword": "vicePrincipal",
-        "link":"./pano/vicePrincipal.html"
+        "keryword": "vicePrincipal",
+        "linrk":"./pano/viceprincipal.html"
     },
-    "senatus": {
+    "sernatus": {
         "aliases": [
-            "senatus hall",
+           "senatus hall",
             "senatus",
-            "senatus room"
+           "senatus room"
         ],
-        "keyword": "senatus"
+        "keryword": "senatus",
+        "linrk":"./pano/senatushall.html"
     },
-    "nursing": {
-        "aliases": [
-            "nursing",
+    "nurrsing": {
+        "aliases": ["nursing",
             "nursing room",
             "nurse",
             "nursing station",
@@ -70,72 +66,92 @@
         "keyword": "nursing",
         "link":"./pano/nursing.html"
     },
-    "dinette": {
+    
+    "hodECE": {
         "aliases": [
-            "dinette",
-            "diningroom",
-            "dinetteroom",
-            "dinner"
+            "Head of the department electronics",
+            "Head of the department electronics and communications",
+            "Head of the department in electronics and communications",
+            "electronics: and communications Head of the department ",
+            "electronics, head of the department ",
+            "Head of the department electronics and communication",
+            "H.O.D.E.C.E",
+            "h-o-d-e-c-e",
+            "h-o-d of e-c-e",
+            "h-o-d electronics"
         ],
-        "keyword": "dinette"
+        "keyword": "hodECE",
+        "link":"./pano/hodece.html"
     },
-    "intel": {
+    "hodCSE": {
         "aliases": [
-            "intelunnatilab",
-            "intellab",
-            "intel",
-            "unnati",
-            "unnatilab"
+            "Head of the department computer science",
+            "Head of the department computer science and engineering",
+            "computer science and engineering Head of the department ",
+            "computer science Head of the department ",
+
+            
+
+            "Head of the department c-s-e",
+            "H.O.D.C.S.E",
+            "h-o-d-c-s-e",
+            "h-o-d c-s-e",
+            "h-o-d c-s",
+            "h.o.d computer science"
         ],
-        "keyword": "intel",
-        "link":"./renderer/pano/intel.html"
+        "keyword": "hodCSE",
+        "link":"./pano/hodcse.html"
     },
-    "basic_electronics_lab": {
+    "hodEEE": {
         "aliases": [
-            "basic electronics lab",
-            "electronics lab",
-            "basic electronics"
+            "Head of the department electrical and electronics engineering",
+            "Head of the department electrical and electronics",
+            "electrical and electronics Head of the department ",
+            "electrical Head of the department ",
+
+            
+
+            "Head of the department electrical",
+            "H-O-D-triple-E"
+
         ],
-        "keyword": "basic_electronics_lab"
+        "keyword": "hodEEE",
+        "link":"./pano/hodeee.html"
     },
-    "visiors_lounge": {
+    "hodCE": {
         "aliases": [
-            "visitorslounge",
-            "visitorroom",
-            "guestroom",
-            "lounge",
-            "visitors"
+            "Head of the department civil engineering",
+            "Head of the department civil",
+            "civil engineering Head of the department ",
+            "civil Head of the department ",
+            "Head of the department civil",
+            "h-o-d c-e",
+            "h-o-d civil"
         ],
-        "keyword": "visiors_lounge"
+        "keyword": "hodCE",
+        "link":"./pano/hodce.html"
     },
-    "chemistry_lab": {
+    "hodME": {
         "aliases": [
-            "chemistrylab",
-            "chemistry"
+            "Head of the department Mechanical engineering",
+            "Head of the department mechanical",
+            "mechanical engineering Head of the department ",
+            "mechanical Head of the department ",
+            
+            "h-o-d m-e",
+            "h-o-d mechanical"
         ],
-        "keyword": "chemistry_lab"
-    },
-    "board_room": {
-        "aliases": [
-            "board room",
-            "board",
-            "boardroom"
-        ],
-        "keyword": "board_room"
-    },
-    "physics_lab": {
-        "aliases": [
-            "physicslab",
-            "physics"
-        ],
-        "keyword": "physics_lab"
+        "keyword": "hodME",
+        "link":"./pano/hodme.html"
     },
     "office_room": {
         "aliases": [
             "officeroom",
             "office",
-            "office room"
+            "office room",
+            "administration"
         ],
-        "keyword": "office_room"
+        "keyword": "office_room",
+        "link":"./pano/office.html"
     }
 }
